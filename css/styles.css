@@ -10,6 +10,8 @@
   --contact-color: rgba(117, 117, 117, 1);
 }
 
+/* 250ms cubic-bezier(0.4, 0, 0.2, 1) */
+
 body {
   background-color: var(--primari-buckground-color);
   color: var(--primary-font-color);
@@ -23,14 +25,6 @@ body {
 a {
   text-decoration: none;
 }
-
-/* a:hover {
-  color: #2196F3;
-}
-
-a:hover svg {
-  color: #2196F3;
-} */
 
 /* Скидання маркувань списку */
 
@@ -144,6 +138,7 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav:hover,
@@ -159,6 +154,8 @@ img {
   padding-bottom: 32px;
 }
 
+/* Контакти */
+
 .class-contact {
   display: inline-flex;
   padding: 32px 0px 32px;
@@ -168,6 +165,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   font-size: 16px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .class-contact:hover,
@@ -175,9 +173,35 @@ img {
   color: var(--secondary-font-color);
 }
 
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 32px 32px;
+  margin-right: 10px;
+  width: 161px;
+}
+
+.contact-menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact + .header-contact {
+  margin-left: 50px;
+}
+
+.contact-icon-svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* Лінія хедера */
+
 .line {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
+
 
 /* Герой */
 
@@ -223,6 +247,7 @@ img {
   display: inline-block;
   width: 216px;
   height: 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-posluga:hover,
@@ -314,6 +339,7 @@ img {
 .site-footer {
   color: var(--font-color-footer);
   line-height: 1.7;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-footer:hover,
@@ -323,6 +349,7 @@ img {
 
 .site-footer-2 {
   color: var(--primari-buckground-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-footer-2:hover,
@@ -357,10 +384,12 @@ img {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-fon svg {
   fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-fon:hover svg,
@@ -372,7 +401,6 @@ img {
 .client-fon:focus {
   border: 1px solid rgba(33, 150, 243, 1);
   border-radius: 4px;
-  fill: rgba(33, 150, 243, 1);
 }
 
 /* Секція футер */
@@ -442,6 +470,11 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+      
 }
 
 .button-portfolio:focus,
@@ -475,6 +508,7 @@ img {
 
 .portfolio-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
@@ -483,33 +517,7 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.contact-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: 32px 32px;
-  margin-right: 10px;
-  width: 161px;
-}
 
-.contact-menu {
-  display: flex;
-  margin-left: auto;
-}
-
-.header-contact + .header-contact {
-  margin-left: 50px;
-}
-
-.header-contact:hover,
-.header-contact:focus {
-  color: var(--accent-color);
-}
-
-.contact-icon-svg {
-  margin-right: 10px;
-  fill: currentColor;
-}
 
 .perevagi-list {
   display: flex;
@@ -571,10 +579,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-fon svg {
   fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-fon:hover,
@@ -615,6 +625,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-fon svg {
