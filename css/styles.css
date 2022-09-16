@@ -691,7 +691,7 @@ img {
   transition: opacity 250ms ease visibility 250ms ease;
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -707,11 +707,29 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.modal-close {
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px;
+}
+
+
+/* .modal-close {
   background-color: rgba(255, 255, 255, 1);
   padding: 0;
   position: absolute;
   top: 8px;
   right: 8px;
   border-radius: 50%;
-}
+} */
+
