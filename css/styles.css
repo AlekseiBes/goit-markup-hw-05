@@ -149,6 +149,7 @@ img {
 
 .site-nav.current {
   color: var(--secondary-font-color);
+  position: relative;
 }
 
 .site-nav.current::after {
@@ -207,7 +208,7 @@ img {
 
 /* Лінія хедера */
 
-.line {
+.line-header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
