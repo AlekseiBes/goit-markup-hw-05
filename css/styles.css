@@ -636,6 +636,12 @@ img {
 
 /* Оверлей */
 
+.portfolio-wrapper {
+  position: relative;
+  overflow: hidden;
+
+}
+
 .overlay {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -643,7 +649,6 @@ img {
   color: var(--primari-buckground-color);
   background-color: rgba(33, 150, 243, 0.9);
   line-height: 1.55;
-  letter-spacing: 3em;
 
   padding: 63px 24px;
 
@@ -652,21 +657,19 @@ img {
   left: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;
   transform: translateY(100%);
+  transition: transform 250ms Linear;
 }
 
-.portfolio-wrapper:hover .owerlay,
-.portfolio-wrapper:focus .owerlay {
+.portfolio-link:hover .owerlay,
+.portfolio-link:focus .owerlay {
   transform: translateY(0);
 }
 
-.portfolio-wrapper {
-  position: relative;
-  overflow: hidden;
-}
+/* 
 
-/*  */
+  overflow: auto;
+ */
 
 /* Модальне вікно */
 
